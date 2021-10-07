@@ -1,18 +1,20 @@
 .display-box {
     border: 1px solid #c5c5c5;
     border-radius: 5px;
+    padding: 15px;
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .display-box__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-
-.display-box__icon {
-
-}
 
 .display-box__icon--rotate {
     color: #fda380;

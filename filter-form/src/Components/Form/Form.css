@@ -1,9 +1,14 @@
 .form {
     display: flex;
+}
 
+.form__content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 
 .form__inputs {
-
+    user-select: none;
+    -webkit-user-select: none;
 }

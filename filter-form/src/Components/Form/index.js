@@ -9,19 +9,19 @@ const Form = ({ formSetting, setFormSetting }) => {
 
     return (
         <form className="form">
-            <div className="form__inputs">
-                <label for="all">
-                    <input type="radio" id="all" value="All Vectors"
+            <div className="form__content">
+                <label htmlFor="all" className="form__inputs">
+                    <input type="radio" name="vector-type" id="all" value="All Vectors"
                     onClick={selectType}></input>
                     All
                 </label>
-                <label for="free">
-                 <input type="radio" id="free" value="Free Vectors"
+                <label htmlFor="free" className="form__inputs">
+                 <input type="radio" name="vector-type" id="free" value="Free Vectors"
                  onClick={selectType}></input>
                     Free
              </label>
-                <label for="pro">
-                    <input type="radio" id="pro" value="Pro Vectors"
+                <label htmlFor="pro" className="form__inputs">
+                    <input type="radio" name="vector-type" id="pro" value="Pro Vectors"
                     onClick={selectType}></input>
                     Pro
                 </label>
