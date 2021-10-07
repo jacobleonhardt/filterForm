@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import RadioButton from '../RadioButton'
 import './Form.css'
 
@@ -10,11 +10,12 @@ const Form = ({ formSetting, setFormSetting }) => {
 
     return (
         <form className="form">
-            <div className="form__content">
-                <RadioButton name={'All'} formSetting={formSetting} selectType={selectType} />
-                <RadioButton name={'Free'} formSetting={formSetting} selectType={selectType} />
-                <RadioButton name={'Pro'} formSetting={formSetting} selectType={selectType} />
-            </div>
+            <RadioButton name={'All'} formSetting={formSetting}
+                selectType={selectType} />
+            <RadioButton name={'Free'} formSetting={formSetting}
+                selectType={selectType} />
+            <RadioButton name={'Pro'} formSetting={formSetting}
+                selectType={selectType} />
         </form>
     )
 }
