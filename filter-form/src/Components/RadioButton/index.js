@@ -2,10 +2,11 @@ import React from 'react'
 import './RadioButton.css'
 
 const RadioButton = ({ name, formSetting, selectType }) => {
+
     return (
         <label className="radio">
             <div className="radio__icon">
-                { formSetting === name ?
+                { formSetting === `${name} Vectors` ?
                 <div className="radio__icon--on"></div> :
                 <></>}
             </div>

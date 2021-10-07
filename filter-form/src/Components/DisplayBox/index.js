@@ -11,7 +11,6 @@ const DisplayBox = ({setIsOpen, isOpen}) => {
     }
 
     const rotate = () => {
-        console.log('>>>>>>>>>>>', isOpen)
         if(isOpen) {
             document.querySelector('.display-box__icon').classList.add('display-box__icon--rotate')
         } else {
