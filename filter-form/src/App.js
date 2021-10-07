@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayBox from './Components/DisplayBox/index.js';
 import logo from './logo.svg';
 import './App.css';
+import 'normalize.css';
 
 function App() {
 
