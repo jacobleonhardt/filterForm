@@ -1,0 +1,35 @@
+.display-box {
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+.display-box__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.display-box__icon {
+
+}
+
+.display-box__icon--rotate {
+    color: #fda380;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
