@@ -11,7 +11,7 @@ const DisplayBox = ({isOpen, open}) => {
 
     return (
         <section className="display-box">
-            <div className="display-box__title" onClick={open}>
+            <div className="display-box__title">
                 <h2>{formSetting} Vectors</h2>
                 <span className={`display-box__title__icon${up}`}><i className="fas fa-chevron-down"></i></span>
             </div>
