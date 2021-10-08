@@ -3,7 +3,7 @@ import './RadioButton.css'
 
 const RadioButton = ({ name, formSetting, selectType }) => {
 
-    const check = (formSetting === `${name} Vectors`)
+    const check = (formSetting === name)
     let selected = ''
 
     if(check) selected = '--selected'
@@ -15,8 +15,10 @@ const RadioButton = ({ name, formSetting, selectType }) => {
             </div>
             <input type="radio" name="vector-type" id="all"
                 className="radio__input"
-                value={`${name} Vectors`}
-                onClick={selectType}
+                value={name}
+                onClick={e => {
+                    e.stopPropagation()
+                    selectType(e) }}
                 onChange={() => check}></input>
                 {name}
         </label>
