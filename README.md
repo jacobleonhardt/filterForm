@@ -10,7 +10,7 @@
 - Font Awesome Icons
 
 ## To Use
-Open in code environment.
-In your terminal, `cd` into `filter-form` directory.
-Run `npm install` to install dependencies.
-Run `npm start` to open React app in localhost.
+- Open in code environment.
+- In your terminal, `cd` into `filter-form` directory.
+- Run `npm install` to install dependencies.
+- Run `npm start` to open React app in localhost.
