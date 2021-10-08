@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app" onClick={e => open(e)}>
       <main className="app__body">
-        <DisplayBox isOpen={isOpen} open={open} />
+        <DisplayBox isOpen={isOpen} />
       </main>
     </div>
   );

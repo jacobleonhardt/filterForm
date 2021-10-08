@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './RadioButton.css'
 
 const RadioButton = ({ name, formSetting, selectType }) => {
@@ -17,10 +17,9 @@ const RadioButton = ({ name, formSetting, selectType }) => {
                 className="radio__input"
                 value={name}
                 onClick={e => {
-                    e.stopPropagation()
                     selectType(e) }}
                 onChange={() => check}></input>
-                {name}
+            <span className="radio__label">{name}</span>
         </label>
     )
 }

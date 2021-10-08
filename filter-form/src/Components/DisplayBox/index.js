@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Form from '../Form'
 import './DisplayBox.css'
 
-const DisplayBox = ({isOpen, open}) => {
+const DisplayBox = ({ isOpen }) => {
 
     const [formSetting, setFormSetting] = useState('All')
     let up = ''
@@ -13,10 +13,13 @@ const DisplayBox = ({isOpen, open}) => {
         <section className="display-box">
             <div className="display-box__title">
                 <h2>{formSetting} Vectors</h2>
-                <span className={`display-box__title__icon${up}`}><i className="fas fa-chevron-down"></i></span>
+                <span className={`display-box__title__icon${up}`}>
+                    <i className="fas fa-chevron-down"></i>
+                </span>
             </div>
             <div className="display-box__content">
-                {isOpen ? <Form formSetting={formSetting} setFormSetting={setFormSetting} /> : <></>}
+                {isOpen ? <Form formSetting={formSetting}
+                    setFormSetting={setFormSetting} /> : <></>}
             </div>
         </section>
     )
