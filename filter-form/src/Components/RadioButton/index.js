@@ -17,7 +17,7 @@ const RadioButton = ({ name, formSetting, selectType }) => {
                 className="radio__input"
                 value={`${name} Vectors`}
                 onClick={selectType}
-                checked={check}></input>
+                onChange={() => check}></input>
                 {name}
         </label>
     )

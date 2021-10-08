@@ -1,15 +1,19 @@
 .app {
   text-align: left;
-}
-
-.app__body {
-  background-color: #eee;
   min-height: 100vh;
+  width: 100vw;
+  background-color: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #000;
+}
+
+.app__body {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 400px;
 }
 
 h1, h2, h3, p {

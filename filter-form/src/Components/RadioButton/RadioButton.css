@@ -4,6 +4,11 @@
     -ms-user-select: none;
     display: flex;
     align-items: center;
+    padding: 0 15px;
+}
+
+.radio:last-child {
+    padding-bottom: 15px;
 }
 
 .radio__icon {
@@ -11,7 +16,7 @@
     margin: 4px 5px 4px 0;
     width: 12px;
     height: 12px;
-    border: 1px solid #c5c5c5;
+    border: 1px solid #bbb;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -46,7 +51,6 @@
     transition: .5s ease;
 }
 
-/* Select Radio Buttons */
-input[type=radio i] {
+.radio__input {
     display: none;
 }

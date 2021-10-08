@@ -2,27 +2,18 @@ import React, { useState } from 'react'
 import Form from '../Form'
 import './DisplayBox.css'
 
-const DisplayBox = ({setIsOpen, isOpen}) => {
+const DisplayBox = ({isOpen, open}) => {
 
     const [formSetting, setFormSetting] = useState('All Vectors')
+    let up = ''
 
-    const open = () => {
-        setIsOpen(!isOpen)
-    }
-
-    const rotate = () => {
-        if(isOpen) {
-            document.querySelector('.display-box__icon').classList.add('display-box__icon--rotate')
-        } else {
-            document.querySelector('.display-box__icon').classList.remove('display-box__icon--rotate')
-        }
-    }
+    if(isOpen) up = '--up'
 
     return (
         <section className="display-box">
             <div className="display-box__title" onClick={open}>
                 <h2>{formSetting}</h2>
-                <span className="display-box__icon"><i className="fas fa-chevron-up"></i></span>
+                <span className={`display-box__title__icon${up}`}><i className="fas fa-chevron-down"></i></span>
             </div>
             <div className="display-box__content">
                 {isOpen ? <Form formSetting={formSetting} setFormSetting={setFormSetting} /> : <></>}
